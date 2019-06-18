@@ -11,9 +11,9 @@ add_executable(editor
 )
 
 set_target_properties(editor PROPERTIES
-    CXX_STANDARD 14
-    CXX_STANDARD_REQUIRED ON
-    COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"
+	CXX_STANDARD 14
+	CXX_STANDARD_REQUIRED ON
+	COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"
 	COMPILE_OPTIONS "-lpthread"
 )
 
