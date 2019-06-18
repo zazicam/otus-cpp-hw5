@@ -47,19 +47,19 @@ class TToolSelect: public TTool{
     TFrame* frame;
 
 public:
-	TToolSelect(int Handle);
-	
-	void Group(void);
-	void Ungroup(void);
-	void Foreground(void);
-	void Background(void);
-	void Front(void);
-	void Back(void);
+    TToolSelect(int Handle);
+    
+    void Group(void);
+    void Ungroup(void);
+    void Foreground(void);
+    void Background(void);
+    void Front(void);
+    void Back(void);
 
-	void MouseDown(bool right,int X,int Y);
-	void MouseMove(int X,int Y);
-	void MouseUp(int X,int Y);
-	void Finish(void);
+    void MouseDown(bool right,int X,int Y);
+    void MouseMove(int X,int Y);
+    void MouseUp(int X,int Y);
+    void Finish(void);
 };
 
 class TToolLine: public TTool{
@@ -104,7 +104,7 @@ public:
 };
 
 class TDecorator : public TGlyph{
-	TGlyph* Component;
+    TGlyph* Component;
 public:
     TDecorator(void): TGlyph(){};
     ~TDecorator(void);

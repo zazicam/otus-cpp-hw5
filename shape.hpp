@@ -12,8 +12,8 @@ public:
     virtual int IsSelect(double x, double y); 
     virtual void Draw(double Width, double Height)=0;
     
-	virtual int Save(std::ofstream& file);
-	virtual int Load(std::ifstream& file);
+    virtual int Save(std::ofstream& file);
+    virtual int Load(std::ifstream& file);
 };
 
 class TContainerShape : public TShape {
@@ -31,8 +31,8 @@ public:
     int IsSelect(double x, double y);
     void Draw(double Width, double Height);
 
-	int Save(std::ofstream& file) override;
-	int Load(std::ifstream& file) override;
+    int Save(std::ofstream& file) override;
+    int Load(std::ifstream& file) override;
 };
 
 class TPoint : public TShape{
@@ -45,8 +45,8 @@ public:
     int IsSelect(double x, double y);
     void Draw(double Width, double Height);
 
-	int Save(std::ofstream& file) override;
-	int Load(std::ifstream& file) override;
+    int Save(std::ofstream& file) override;
+    int Load(std::ifstream& file) override;
 };
 
 class TFrame : public TShape {
@@ -67,8 +67,8 @@ class TLine : public TShape {
     void Draw(double Width, double Height);
     TContainerShape* GetSelection();
     
-	int Save(std::ofstream& file) override;
-	int Load(std::ifstream& file) override;
+    int Save(std::ofstream& file) override;
+    int Load(std::ifstream& file) override;
 
 };
 
@@ -81,8 +81,8 @@ public:
     int IsSelect(double x, double y);
     void Draw(double Width, double Height);
 
-	int Save(std::ofstream& file) override;
-	int Load(std::ifstream& file) override;
+    int Save(std::ofstream& file) override;
+    int Load(std::ifstream& file) override;
 };
 
 class TCircle : public TShape {
@@ -97,7 +97,7 @@ public:
     void Draw(double Width, double Height);
     TContainerShape* GetSelection();
 
-	int Save(std::ofstream& file) override;
-	int Load(std::ifstream& file) override;
+    int Save(std::ofstream& file) override;
+    int Load(std::ifstream& file) override;
 };
 

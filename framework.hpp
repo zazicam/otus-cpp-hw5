@@ -6,9 +6,9 @@
 #define TFORM
 class TForm {
 public:
-	void exec() {
-		std::cout<<"Yeah! Editor compiled! :D"<<std::endl;
-	}
+    void exec() {
+        std::cout<<"Yeah! Editor compiled! :D"<<std::endl;
+    }
 };
 #endif
 
